@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>Flight Name</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Date and Time</th>
+      <th>Arrival/Departure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let flight of flightList">
+      <td>{{ flight.flightName }}</td>
+      <td>{{ flight.from }}</td>
+      <td>{{ flight.to }}</td>
+      <td>{{ flight.dateTime }}</td>
+      <td>{{ flight.arrivalDeparture }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<router-outlet />
